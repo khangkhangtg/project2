@@ -1,0 +1,149 @@
+body{
+	font-size: .8em;
+    font-family: Open Sans,Tahoma,Arial;
+    color: #333;
+    background-color: #fff;
+    text-align: justify;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+li{
+	list-style-type: none;
+}
+.wrapperhome{
+	width: 100%;
+}
+.wrapper-header{
+	border-bottom: 1px solid #e6e6e6;
+	margin-bottom: 10px;
+}
+.container{
+	width: 1000px;
+	margin: 0 auto;
+	line-height: 20px;
+	padding-top: 10px;
+	display: block;
+}
+.container::after{
+	clear: both;
+}
+.wrapper-header > .container{
+	height: 100px;
+	m
+}
+.language > a:hover{
+	text-decoration: underline;
+}
+.language > a.active{
+	color: #fb6300
+}
+.search > form > input[type="text"]{
+	width: 150px;
+    height: 18px;
+    font-size: 12px;
+    color: #333;
+    border: 1px solid #dfdfdf;
+    border-radius: 12px;
+    padding: 4px 32px 4px 6px;
+}
+.search > form > input[type="text"]:hover{
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+.search > form > input[type="text"]:focus{
+	outline-offset: -2px;
+	outline: 0px;
+}
+.search > form > input[type="submit"]{
+	background: url(../img/btnsearch.png) no-repeat top center;
+	width: auto;
+	padding: 6px 15px;
+	border: none;
+	position: absolute;
+	right: -2px;
+	top: 0;
+}
+.menu {
+	clear: both;
+}
+.chinh{
+	position: relative;
+	float: left;
+}
+.chinh > a{
+	color: #333;
+    padding: 13px;
+    border-radius: 0px;
+    line-height: 10px;
+    font-size: 11px;
+    display: block;
+}
+.chinh a:hover, .chinh.active>a{
+	color: #fff;
+	background-color: #0078c3;
+}
+.submenu{
+	padding: 0;
+	margin: 0;
+	background-color: #fff;
+	border-left: 1px solid #aaa;
+	border-right: 1px solid #aaa;
+	border-bottom: 1px solid #aaa;
+}
+.chinh .wp-submenu{
+	display: none;
+	position: absolute;
+	z-index: 999;
+}
+.chinh:hover .wp-submenu{
+	display: block;
+}
+.submenu li{padding: 0; margin: 0; min-width: 200px;}
+.submenu a{
+	display: block;
+	padding: 3px 3px 2px 15px;
+	font-size: 12px;
+	border-bottom: 1px solid #e6e6e6;
+}
+.content-menu{background-color: #F1F1F1;}
+.content-menu::after{clear: both;}
+.content-menu a{
+	display: block;
+	float: left;
+	padding: 5px;
+	margin: 0 0 20px 0;
+	color: #0078c3;
+	font-weight: 900;
+	border-left: 1px solid #0078c3;
+	width: 15.5%;
+}
+.content-menu a:hover{
+	background-color: #0078c3;
+	color: #fff;
+}
+.main-content h1{
+	color: #BF1111;
+	text-align: center;
+	margin: 20px auto;
+	line-height: 20px;
+}
+.main-content h3{
+	background: rgba(0, 0, 0, 0) url(../img/bg-header.jpg) no-repeat scroll center bottom;
+	color: #0078c3;
+    font-size: 15px;
+    height: 55px;
+    text-align: center;
+}
+.p > p{
+	float: left;
+	max-width: 65%;
+}
+.p > img{
+	float: left;
+	max-width: 30%;
+}
