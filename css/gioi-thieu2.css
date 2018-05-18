@@ -1,0 +1,146 @@
+.content .container{
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-gap: 30px;
+}
+
+aside .aside-menu{
+	background-color: #f1f1f1;
+	padding:  10px;
+	font-size: 13px;
+	font-weight: bold;
+	color: #0078c3;
+}
+aside h2{font-size: 30px;}
+aside a{
+	display: block;
+	width: 95%;
+	padding: 10px;
+	margin-top: 5px;
+	border-bottom: 1px dashed #333;
+	color: #0078c3;
+}
+aside a.active, aside a:hover{
+	background-color: #0078c3;
+	color: #fff;
+}
+
+.aside-dropdown{display: none}
+
+.content-menu{
+	border-bottom: 1px solid #C5C5C5; 
+	overflow: hidden;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+}
+.content-menu::after{clear: both;}
+.content-menu a{
+	display: block;
+	padding: 5px;
+	margin: 0 0 10px 0;
+	color: #0078c3;
+	font-weight: 900;
+	border-left: 1px solid #0078c3;
+	width: 15%;
+}
+.content-menu a:hover{
+	background-color: #0078c3;
+	color: #fff;
+}
+.main-content h1{
+	color: #BF1111;
+	text-align: center;
+	margin: 20px auto;
+	line-height: 20px;
+}
+.main-content h3{
+	background: rgba(0, 0, 0, 0) url(../img/bg-header.jpg) no-repeat scroll center bottom;
+	color: #0078c3;
+    font-size: 15px;
+    height: 55px;
+    text-align: center;
+}
+.p > p{
+	float: left;
+	max-width: 65%;
+}
+.p > img{
+	float: left;
+	max-width: 30%;
+}
+.wp-img{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+	grid-template-rows: repeat(auto-fit, 150px);
+	width: 690px;
+	margin: 0 auto;
+}
+.wp-img img{
+	width: 80%;
+	/* height: 100%; */
+	object-fit: cover;
+	margin: auto;
+}
+.slogan p{
+	text-align: center;
+	font-size: 18px;
+	font-weight: 590;
+	background-color: #ededed;
+	color: #0078C3;
+	line-height: 30px;
+	padding: 20px;
+}
+@media all and (max-width: 1100px) {
+
+.content{
+	clear: both;
+	width: 100%;
+}
+
+}
+
+@media all and (max-width: 1010px) {
+	
+.content .container{display: block;}
+
+.aside-menu{display: none}
+
+.aside-dropdown{
+	display: block;
+	clear: both;
+	overflow: hidden;
+	margin-bottom: 10px;
+	background-color: #f1f1f1;
+}
+
+.aside-dropdown .aside-dropbtn{
+	cursor: pointer;
+    font-size: 25px;    
+    border: none;
+    outline: none;
+    color: #0078C3;
+    padding: 0px 16px 10px 16px;
+    font-family: inherit;
+    font-weight: bold;
+    margin-top: 20px;
+    width: 94%;
+}
+
+.as-dd-content{display: none;}
+
+.aside-show{display: block;}
+
+}
+
+@media all and (max-width: 640px) {
+
+.slogan{display: none;}
+
+.p > p{
+	min-width: 95%;
+}
+.p > img{
+	display: none;
+}
+
+}
