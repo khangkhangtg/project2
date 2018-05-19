@@ -68,26 +68,27 @@ li{
 	top: 0;
 }
 .menu {	clear: both;}
+.menu > ul > li{display: inline-block;padding: 13px 0;}
 .dropdown{display: none;}
 .chinh{
 	position: relative;
-	display: inline-block;
 }
 .chinh > a{
 	color: #333;
-    padding: 13px;
-    border-radius: 0px;
+    padding: 0px 13px;
+   	border-left: 1px solid #333;
     line-height: 10px;
     font-size: 11px;
     display: block;
 }
-.chinh a:hover, .chinh.active>a{
+.chinh:hover, .chinh:hover > a, li.chinh.active, li.chinh.active > a,
+.submenu a:hover{
 	color: #fff;
 	background-color: #0078c3;
 }
 .submenu{
 	padding: 0;
-	margin: 0;
+	margin-top: 12px;
 	background-color: #fff;
 	border-left: 1px solid #aaa;
 	border-right: 1px solid #aaa;

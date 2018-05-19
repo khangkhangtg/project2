@@ -27,26 +27,17 @@ aside a.active, aside a:hover{
 
 .aside-dropdown{display: none}
 
-.content-menu{
-	border-bottom: 1px solid #C5C5C5; 
-	overflow: hidden;
-	display: grid;
-	grid-template-columns: repeat(6, 1fr);
+.breadcrumb{
+	color: #333;
+	
+	padding: 10px;
+	border-bottom: 1px solid #ccc;
 }
-.content-menu::after{clear: both;}
-.content-menu a{
-	display: block;
-	padding: 5px;
-	margin: 0 0 10px 0;
+.breadcrumb a{
 	color: #0078c3;
-	font-weight: 900;
-	border-left: 1px solid #0078c3;
-	width: 15%;
+	font-weight: 600;
 }
-.content-menu a:hover{
-	background-color: #0078c3;
-	color: #fff;
-}
+
 .main-content h1{
 	color: #BF1111;
 	text-align: center;
