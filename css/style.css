@@ -109,7 +109,7 @@ li{
 	font-size: 12px;
 	border-bottom: 1px solid #e6e6e6;
 }
-
+.content{clear: both;}
 .footer{
 	background-color: #0078c3;
 	color: #fff;

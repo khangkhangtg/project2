@@ -1,0 +1,128 @@
+.tab-title{
+	background: rgba(0, 0, 0, 0) url("../img/bg-header.jpg") no-repeat scroll center bottom;
+	height: 55px;
+}
+.hoatdongdaotao{
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-column-gap: 5px;
+	text-align: center;
+	font-size: 14px;
+}
+.hoatdongdaotao a{color: #c2c2c2;}
+.hoatdongdaotao .item-img{
+	background-color: #c2c2c2;
+	border-radius: 50%;
+	height: 98px;
+	width: 98px;
+	text-align: center;
+	cursor: pointer;
+	margin: 0 auto;
+}
+.hoatdongdaotao .item-img:hover,.hoatdongdaotao .item-img.active, .hoatdongdaotao a.active{
+	background-color: #0078c3;
+	color: #0078c3;
+	font-weight: bold;
+
+}
+.hoatdongdaotao .item-img img{
+	margin-top: 20px;
+	width: 60px;
+}
+.wrap1-2{
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-column-gap: 20px;
+}
+.danhmuc h2{
+	color: #fff; 
+	background-color: #0078c3;
+	padding: 10px 20px;
+	margin: 0;
+}
+.danhmuc .item{
+	background-color: #eee;
+	padding: 10px 25px;
+	border-bottom: 1px solid #ccc;
+	border-top: 2px solid #0078c3;
+}
+.danhmuc .item.active{
+	background: #eee url("../img/icon-next.png") no-repeat scroll 95% 45% !important;
+}
+.danhmuc .item.active a{
+	font-weight: bold;
+	color: #0078c3;
+}
+.danhmuc .item a:hover{
+	text-decoration: underline;
+}
+.doitac{
+	text-align: center;
+	color:  #0078c3;
+	margin-top: 50px;
+}
+.page-title{
+	background: rgba(0, 0, 0, 0) url("../img/dotted-bullet.jpg") no-repeat scroll 0 4px;
+	color: #0078c3;
+	font-size: 1.1em;
+	font-weight: bold;
+	margin-bottom: 20px;
+	padding-left: 20px;
+	padding-top: 1px;
+}
+.small{
+	color: red; text-align: center;
+}
+#RegisterForm legend{
+	color: #0078c3;
+	font-size: 1.2em;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #e5e5e5;
+	margin-bottom: 20px;
+}
+#RegisterForm .control-group{
+	margin-bottom: 20px;
+	font-size: 13px;
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	grid-column-gap: 20px;
+}
+#RegisterForm .control-group .control-label{
+	text-align: right;
+	margin-top: 3px;
+}
+#RegisterForm .control-group .controls input[type="text"], textarea{
+	width: 90%;
+	padding: 5px 7px;
+	border: 1px solid #0078c3;
+	border-radius: 5px;
+}
+#RegisterForm .control-group .controls input.focus{
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+#RegisterForm .control-group .btn-submit{
+	color: #fff;
+	background: linear-gradient(to bottom, #fcc450, #f66406);
+	padding: 5px 10px;
+	border: 1px solid #aaa;
+	border-radius: 5px;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	cursor: pointer;
+}
+#RegisterForm .control-group .btn-reset{
+	color: #000;
+	background: linear-gradient(to bottom, #eee, #ddd);
+	padding: 5px 10px;
+	border: 1px solid #aaa;
+	border-radius: 5px;
+	cursor: pointer;
+}
+@media all and (max-width: 1000px) {
+	.wrap1-2{
+		grid-template-columns: 1fr;
+	}
+	.hoatdongdaotao{
+		grid-template-columns: 1fr 1fr;
+	}
+}
