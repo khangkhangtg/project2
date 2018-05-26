@@ -1,0 +1,110 @@
+.tab-title{
+	background: rgba(0, 0, 0, 0) url("../img/bg-header.jpg") no-repeat scroll center bottom;
+	height: 55px;
+}
+.hoatdongdaotao{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 5px;
+	text-align: center;
+	font-size: 14px;
+}
+.hoatdongdaotao a{color: #c2c2c2;}
+.hoatdongdaotao .item-img{
+	background-color: #c2c2c2;
+	border-radius: 50%;
+	height: 98px;
+	width: 98px;
+	text-align: center;
+	cursor: pointer;
+	margin: 0 auto;
+}
+.hoatdongdaotao .item-img:hover,.hoatdongdaotao .item-img.active, .hoatdongdaotao a.active{
+	background-color: #0078c3;
+	color: #0078c3;
+	font-weight: bold;
+
+}
+.hoatdongdaotao .item-img img{
+	margin-top: 20px;
+	width: 60px;
+}
+.program .title-program{
+	font-size: 1.25em;
+	text-transform: uppercase;
+	border-left: 3px solid #0078c3;
+	box-shadow: -3px 4px 5px #f0f0f0;
+	margin-bottom: 10px;
+	margin-top: 30px;
+	padding: 5px 10px;
+	color: #0078c3;
+	font-weight: bold;
+}
+.program table{border-collapse: collapse;}
+.program tr:nth-child(even){background-color: #f1f1f1;}
+.program td{
+	font-size: 1.2em;
+	text-transform: uppercase;
+	padding: 8px;
+	line-height: 30px;
+	border:  none;
+	color: #414042;
+	text-align: left;
+	vertical-align: top;
+}
+.program a{color: #414042}
+.program a:hover{text-decoration: underline;}
+.chuongtrinhtoancau{
+	background-color: #eee;
+}
+.chuongtrinhtoancau .title{
+	font-size: 1.25em;
+	text-transform: uppercase;
+	border-left: 3px solid #0078c3;
+	box-shadow: -3px 4px 5px #ccc;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	padding: 5px 10px;
+	color: #0078c3;
+	font-weight: bold;
+}
+.chuongtrinhtoancau .list-item{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 20px;
+	grid-row-gap: 40px;
+}
+.chuongtrinhtoancau .list-item .item{
+	margin: auto;
+	text-align: center;
+}
+.chuongtrinhtoancau .list-item .item img{
+	height: 95%;
+	vertical-align: top;
+	margin-bottom: 10px;
+}
+.chuongtrinhtoancau .list-item .item a{
+	font-size: 1.1em;
+	color: #444;
+	font-weight: bold;
+	margin-top: 30px;
+}
+.chuongtrinhtoancau .list-item .item a:hover{
+	text-decoration: underline;
+}
+.chuongtrinhtoancau .list-item .item a:hover img{
+	opacity: 0.8;
+}
+@media all and (max-width: 640px) {
+	.title-program{
+		font-size: 1em;
+	}
+	.program td{
+		font-size: 0.9em;
+	}	
+}
+@media all and (max-width: 600px) {
+	.hoatdongdaotao{
+		grid-template-columns: 1fr 1fr;
+	}
+}
