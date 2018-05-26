@@ -4,7 +4,7 @@
 }
 .hoatdongdaotao{
 	display: grid;
-	grid-template-columns: repeat(5, 1fr);
+	grid-template-columns: repeat(3, 1fr);
 	grid-column-gap: 5px;
 	text-align: center;
 	font-size: 14px;
@@ -45,6 +45,7 @@
 	padding: 10px 25px;
 	border-bottom: 1px solid #ccc;
 	border-top: 2px solid #0078c3;
+	font-size: 1em;
 }
 .danhmuc .item.active{
 	background: #eee url("../img/icon-next.png") no-repeat scroll 95% 45% !important;
@@ -122,6 +123,8 @@
 	.wrap1-2{
 		grid-template-columns: 1fr;
 	}
+}
+@media all and (max-width: 600px) {
 	.hoatdongdaotao{
 		grid-template-columns: 1fr 1fr;
 	}
