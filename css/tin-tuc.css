@@ -1,0 +1,52 @@
+.breadcrum{
+	border-bottom: 1px solid #aaa;
+	padding-bottom: 8px;
+	font-size: 1em;
+}
+.breadcrum a{
+	color: #0078c3;
+	font-weight: bold;
+}
+.content .list-item{
+	margin: 30px 0;
+}
+.content .list-item .item{
+	margin-top: 20px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 20px;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-column-gap: 10px;
+}
+.content .list-item .item img{
+	width: 90%;
+}
+.content .list-item .item-content{
+	line-height: 20px;
+}
+.content .list-item .item-content a.title{
+	color: #0078c3;
+	font-size: 1.3em;
+}
+.content .page-number{
+	float: right;
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+.content .page-number::before{
+	clear: both;
+}
+.content .page-number a{
+	color: #0078c3;
+}
+@media all and (max-width: 780px) {
+	.content .list-item .item{
+		grid-template-columns: 1fr;
+		border-bottom: none;
+		margin-top: 0;
+	}
+	.content .list-item .item img{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+}
