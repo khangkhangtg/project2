@@ -1,0 +1,27 @@
+.fade{
+	display: none;
+}
+.slideshow1{
+	position: relative;
+	overflow: hidden;
+	height: 400px;
+}
+.slideshow1 img{
+	position: absolute;
+}
+.btn-next, .btn-prev{
+	cursor: pointer;
+	position: absolute;
+	width: auto;
+	padding: 10px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 50%;
+	background-color: rgba(0,0,0,0.5);
+	top: 50%;
+}
+.btn-next{
+	text-align: right;
+}

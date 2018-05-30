@@ -1,3 +1,6 @@
+.content{
+	margin-bottom: 50px;
+}
 .content .container{
 	display: grid;
 	grid-template-columns: 1fr 2fr;
@@ -11,7 +14,7 @@ aside .aside-menu{
 	font-weight: bold;
 	color: #0078c3;
 }
-aside h2{font-size: 30px; padding-left: 20px;}
+aside h2{font-size: 30px;padding-left: 20px;}
 aside a{
 	display: block;
 	width: 95%;
@@ -24,12 +27,23 @@ aside a.active, aside a:hover{
 	background-color: #0078c3;
 	color: #fff;
 }
+aside .guiyeucau{
+	font-size: 1.5em;
+	background-color: #005387;
+	text-align: center;
+	font-weight: 600;
+}
+aside .guiyeucau a{
+	color: #FFF700;
+	border-bottom: none;
+}
 
 .aside-dropdown{display: none}
-
+.clip{
+	height: 350px;
+}
 .breadcrumb{
 	color: #333;
-	
 	padding: 10px;
 	border-bottom: 1px solid #ccc;
 }
@@ -43,44 +57,14 @@ aside a.active, aside a:hover{
 	text-align: center;
 	margin: 20px auto;
 	line-height: 20px;
+	font-size: 2em;
 }
 .main-content h3{
-	background: rgba(0, 0, 0, 0) url(../img/bg-header.jpg) no-repeat scroll center bottom;
 	color: #0078c3;
     font-size: 15px;
-    height: 55px;
-    text-align: center;
+    /* padding: 20px; */
 }
-.p > p{
-	float: left;
-	max-width: 65%;
-}
-.p > img{
-	float: left;
-	max-width: 30%;
-}
-.wp-img{
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-	grid-template-rows: repeat(auto-fit, 150px);
-	width: 690px;
-	margin: 0 auto;
-}
-.wp-img img{
-	width: 80%;
-	/* height: 100%; */
-	object-fit: cover;
-	margin: auto;
-}
-.slogan p{
-	text-align: center;
-	font-size: 18px;
-	font-weight: 590;
-	background-color: #ededed;
-	color: #0078C3;
-	line-height: 30px;
-	padding: 20px;
-}
+
 @media all and (max-width: 1100px) {
 
 .content{
@@ -120,18 +104,5 @@ aside a.active, aside a:hover{
 .as-dd-content{display: none;}
 
 .aside-show{display: block;}
-
-}
-
-@media all and (max-width: 640px) {
-
-.slogan{display: none;}
-
-.p > p{
-	min-width: 95%;
-}
-.p > img{
-	display: none;
-}
 
 }

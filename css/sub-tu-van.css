@@ -1,0 +1,62 @@
+.tab-title{
+	background: rgba(0, 0, 0, 0) url("../img/bg-header.jpg") no-repeat scroll center bottom;
+	height: 55px;
+}
+.breadcrumb{
+	color: #333;
+	padding: 10px;
+	border-bottom: 1px solid #ccc;
+}
+.breadcrumb a{
+	color: #0078c3;
+	font-weight: 600;
+}
+.hoatdongdaotao{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-column-gap: 5px;
+	text-align: center;
+	font-size: 14px;
+}
+.hoatdongdaotao a{color: #c2c2c2;}
+.hoatdongdaotao .item-img{
+	background-color: #c2c2c2;
+	border-radius: 50%;
+	height: 98px;
+	width: 98px;
+	text-align: center;
+	cursor: pointer;
+	margin: 0 auto;
+}
+.hoatdongdaotao .item-img:hover,.hoatdongdaotao .item-img.active, .hoatdongdaotao a.active{
+	background-color: #0078c3;
+	color: #0078c3;
+	font-weight: bold;
+
+}
+.hoatdongdaotao .item-img img{
+	margin-top: 20px;
+	width: 60px;
+}
+.clip{
+	height: 350px;
+	max-width: 600px;
+	margin: 0 auto;	
+}
+.main-content h1{
+	color: #BF1111;
+	text-align: center;
+	margin: 20px auto;
+	line-height: 20px;
+	font-size: 2em;
+}
+.main-content h3{
+	color: #0078c3;
+    font-size: 15px;
+    /* padding: 20px; */
+}
+@media all and (max-width: 600px) {
+	.hoatdongdaotao{
+		grid-template-columns: 1fr 1fr;
+	}
+}
