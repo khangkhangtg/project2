@@ -4,24 +4,143 @@
 .slideshow1{
 	position: relative;
 	overflow: hidden;
-	height: 400px;
+	height: 420px;
+	width: 100%;
 }
 .slideshow1 img{
 	position: absolute;
+	max-height: 80%;
+	max-width: 100%;
 }
 .btn-next, .btn-prev{
 	cursor: pointer;
 	position: absolute;
-	width: auto;
-	padding: 10px;
+	padding: 5px 10px;
 	color: white;
 	font-weight: bold;
-	font-size: 18px;
+	font-size: 18px	;
 	transition: 0.6s ease;
 	border-radius: 50%;
 	background-color: rgba(0,0,0,0.5);
-	top: 50%;
+	top: 43%;
+	margin: 0 10px;
 }
 .btn-next{
-	text-align: right;
+	right: 0;
+}
+.slideshow-slogan{
+	position: absolute;
+	z-index: 99;
+	width: 1000px;
+	bottom: 10px;
+	left: 13%;
+	background-color: #fff;
+	text-align: center;
+	padding: 20px;
+	box-shadow: 2px 3px 10px #888;
+	line-height: 22px;
+}
+.slideshow-slogan p{
+	padding: 0;
+	margin: 0 0 5px 0;
+	font-size: 1.1em;
+}
+.slideshow-slogan p a{color: #0078c3}
+.slideshow-slogan p a:hover{text-decoration: underline;}
+.wp{margin: 20px 0;}
+.wp img{width: 100%}
+.wp > .container{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 30px;
+}
+.wp h2{
+	font-size: 1.6em;
+	padding: 10px 20px;
+	border-left: 5px solid #0073ae;
+	border-bottom: 1px solid #d3d3d3;
+	margin-bottom: 0;
+}
+.wp h2 a{color: #0073ae}
+.wp h2 a:hover{text-decoration: underline;}
+.wp .title-underline{
+	height: 0;
+	border-bottom: 1px solid #d3d3d3;
+	box-shadow: 1px 2px 3px 1px #eeeeee;
+}
+.wp .container ul{padding: 0;}
+.wp .container li{
+	margin-left: 0;
+	padding-left: 1.8em;
+	text-indent: -1.6em;
+	padding-bottom: .5em;
+	text-align: left !important;
+}
+.wp .container li::before{
+	content: '■';
+	padding-right: 8px;
+	color: rgb(243, 112, 33);
+}
+.wp .container a.btn{
+	margin-left: 20px;
+	padding: 5px 33px 5px 21px;
+	background-color: #f37021;
+	color: #fff;
+	font-size: 1.065em;
+}
+.wp.daotao{
+	background: url('../img/bg-consulting.png');
+	line-height: 20px;
+	padding-bottom: 20px;
+}
+.wp.daotao a.more{
+	color: #f37021;
+	font-style: italic;
+	float: right;
+}
+.wp.daotao a.more:hover{text-decoration: underline;}
+.wp.daotao .item{clear: both}
+.wp.daotao .wp-img{margin-top: 7%;}
+.slogan{
+	text-align: center;
+	color: #0078c3;
+	font-style: italic;
+	margin-bottom: 40px;
+}
+.slogan a{color: #f37021;}
+.slogan a:hover{text-decoration: underline}
+.tintuc{
+	width: 1000px;
+	margin: 0 auto;
+}
+.tintuc .list-item{
+	padding: 20px;
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+	font-weight: bold;
+	text-align: center;
+	overflow: hidden;
+}
+.tintuc .list-item .item{height: 200px;}
+.tintuc .list-item .item img{width: 100%; margin-bottom: 20px}
+
+@media all and (max-width: 1000px) {
+	.slideshow{height: 25%;}
+	.slideshow-slogan{width: 95%; left: 0}
+	.tintuc{width: 95%; margin: 0 auto;}
+	.tintuc .list-item{grid-template-columns: repeat(2,1fr);}
+	.tintuc .list-item .item{height: auto;}
+}
+@media all and (max-width: 500px) {
+	.slideshow{height: 25%;}
+}
+@media all and (max-width: 640px){
+	.wp > .container{grid-template-columns: 1fr;}
+	.slideshow{height: 10%;}
+}
+@media all and (max-width: 480px){
+	.tintuc .list-item{grid-template-columns: 1fr;}
+	.slideshow{height: 7%;}
 }
