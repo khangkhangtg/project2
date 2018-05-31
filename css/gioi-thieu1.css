@@ -11,8 +11,9 @@
 	margin: 0 0 10px 0;
 	color: #0078c3;
 	font-weight: 900;
-	border-left: 1px solid #0078c3;
-	width: 15%;
+	width: 85%;
+	font-size: 2.5em;
+	text-align: center
 }
 .content-menu a:hover{
 	background-color: #0078c3;
