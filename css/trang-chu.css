@@ -10,7 +10,7 @@
 .slideshow1 img{
 	position: absolute;
 	max-height: 80%;
-	max-width: 100%;
+	width: 100%;
 }
 .btn-next, .btn-prev{
 	cursor: pointer;
@@ -125,7 +125,48 @@
 }
 .tintuc .list-item .item{height: 200px;}
 .tintuc .list-item .item img{width: 100%; margin-bottom: 20px}
-
+.slogan2{
+	background-color: #0078c3;
+	color: #fff;
+	text-align: center;
+	padding: 30px 0;
+	font-size: 2.1em;
+	font-weight: bold;
+}
+.slogan2 .container div{
+	margin: 12px;
+}
+.wp-ss2{position: relative; padding: 10px;}
+.btn-next-ss2, .btn-prev-ss2{
+	cursor: pointer;
+	color: #333;
+	font-size: 30px;
+	position: absolute;
+	z-index: 999;
+}
+.btn-next-ss2{top: 40%; right: 5%;}
+.btn-prev-ss2{top: 40%; left: 0;}
+.slideshow2{margin-left: 10px;padding-left: 20px;}
+.slideshow2 .wp-img{
+	width: 190px;
+	float: left;
+}
+.slideshow2 img{margin: 0 auto;}
+.pagination{
+	text-align: center;
+	font-size: 1.3em;
+}
+.pagination a{
+	color: #fff;
+	margin-left: 5px;
+}
+.pagination a::before{
+	content: "●";
+	color: #666;
+}
+.pagination a.selected::before{
+	color: #aaa;
+}
 @media all and (max-width: 1000px) {
 	.slideshow{height: 25%;}
 	.slideshow-slogan{width: 95%; left: 0}
