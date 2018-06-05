@@ -15,6 +15,37 @@
 	font-size: 2.5em;
 	text-align: center
 }
+.tab-title{
+	background: rgba(0, 0, 0, 0) url("../img/bg-header.jpg") no-repeat scroll center bottom;
+	height: 55px;
+}
+.hoatdongdaotao{
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-column-gap: 5px;
+	text-align: center;
+	font-size: 14px;
+}
+.hoatdongdaotao a{color: #c2c2c2;}
+.hoatdongdaotao .item-img{
+	background-color: #c2c2c2;
+	border-radius: 50%;
+	height: 98px;
+	width: 98px;
+	text-align: center;
+	cursor: pointer;
+	margin: 0 auto;
+}
+.hoatdongdaotao .item-img:hover,.hoatdongdaotao .item-img.active, .hoatdongdaotao a.active{
+	background-color: #0078c3;
+	color: #0078c3;
+	font-weight: bold;
+
+}
+.hoatdongdaotao .item-img img{
+	margin-top: 20px;
+	width: 60px;
+}
 .content-menu a:hover{
 	background-color: #0078c3;
 	color: #fff;
@@ -74,6 +105,10 @@
 @media all and (max-width: 640px) {
 
 .slogan{display: none;}
+
+.hoatdongdaotao{
+	grid-template-columns: repeat(3, 1fr);
+}
 
 .p > p{
 	min-width: 95%;
