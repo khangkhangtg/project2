@@ -9,7 +9,7 @@
 	display: block;
 	padding: 5px;
 	margin: 0 0 10px 0;
-	color: #0078c3;
+	color: rgba(54, 95, 145, 1);
 	font-weight: 900;
 	width: 85%;
 	font-size: 2.5em;
@@ -37,8 +37,8 @@
 	margin: 0 auto;
 }
 .hoatdongdaotao .item-img:hover,.hoatdongdaotao .item-img.active, .hoatdongdaotao a.active{
-	background-color: #0078c3;
-	color: #0078c3;
+	background-color: rgba(54, 95, 145, 1);
+	color: rgba(54, 95, 145, 1);
 	font-weight: bold;
 
 }
@@ -47,7 +47,7 @@
 	width: 60px;
 }
 .content-menu a:hover{
-	background-color: #0078c3;
+	background-color: rgba(54, 95, 145, 1);
 	color: #fff;
 }
 .main-content h1{
@@ -58,7 +58,7 @@
 }
 .main-content h3{
 	background: rgba(0, 0, 0, 0) url(../img/bg-header.jpg) no-repeat scroll center bottom;
-	color: #0078c3;
+	color: rgba(54, 95, 145, 1);
     font-size: 15px;
     height: 55px;
     text-align: center;
@@ -89,7 +89,7 @@
 	font-size: 18px;
 	font-weight: 590;
 	background-color: #ededed;
-	color: #0078C3;
+	color: rgba(54, 95, 145, 1);
 	line-height: 30px;
 	padding: 20px;
 }

@@ -9,7 +9,7 @@ aside .aside-menu{
 	padding:  10px;
 	font-size: 13px;
 	font-weight: bold;
-	color: #0078c3;
+	color: rgba(54, 95, 145, 1);
 }
 aside h2{font-size: 30px; padding-left: 20px;}
 aside a{
@@ -18,10 +18,10 @@ aside a{
 	padding: 10px;
 	margin-top: 5px;
 	border-bottom: 1px dashed #333;
-	color: #0078c3;
+	color: rgba(54, 95, 145, 1);
 }
 aside a.active, aside a:hover{
-	background-color: #0078c3;
+	background-color: rgba(54, 95, 145, 1);
 	color: #fff;
 }
 
@@ -34,7 +34,7 @@ aside a.active, aside a:hover{
 	border-bottom: 1px solid #ccc;
 }
 .breadcrumb a{
-	color: #0078c3;
+	color: rgba(54, 95, 145, 1);
 	font-weight: 600;
 }
 
@@ -46,7 +46,7 @@ aside a.active, aside a:hover{
 }
 .main-content h3{
 	background: rgba(0, 0, 0, 0) url(../img/bg-header.jpg) no-repeat scroll center bottom;
-	color: #0078c3;
+	color: rgba(54, 95, 145, 1);
     font-size: 15px;
     height: 55px;
     text-align: center;
@@ -77,7 +77,7 @@ aside a.active, aside a:hover{
 	font-size: 18px;
 	font-weight: 590;
 	background-color: #ededed;
-	color: #0078C3;
+	color: rgba(54, 95, 145, 1);
 	line-height: 30px;
 	padding: 20px;
 }
@@ -109,7 +109,7 @@ aside a.active, aside a:hover{
     font-size: 25px;    
     border: none;
     outline: none;
-    color: #0078C3;
+    color: rgba(54, 95, 145, 1);
     padding: 0px 16px 10px 16px;
     font-family: inherit;
     font-weight: bold;

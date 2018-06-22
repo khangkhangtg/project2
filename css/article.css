@@ -4,7 +4,7 @@
 	font-size: 1em;
 }
 .breadcrum a{
-	color: #0078c3;
+	color: rgba(54, 95, 145, 1);
 	font-weight: bold;
 }
 .noidung{
@@ -23,7 +23,7 @@
 .noidung .author::after{clear: both;}
 .tags{margin-bottom: 30px;}
 .tags a{
-	color: #0078c3;
+	color: rgba(54, 95, 145, 1);
 }
 .tags a:hover{
 	text-decoration: underline;
@@ -52,7 +52,7 @@
 	list-style-type: disc;
 }
 .relative-news a{
-	color: #0078c3;
+	color: rgba(54, 95, 145, 1);
 }
 .relative-news a:hover{
 	text-decoration: underline;

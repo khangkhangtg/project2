@@ -10,18 +10,20 @@ window.onclick = function(e) {
       myDropdown.classList.remove('show');
     }
   }
+  var box = document.getElementById("boxRegister");
+  if(e.target == box){
+    box.style.display = 'none';
+  }
 }
 
-// aside dropdown
-function myFunction2() {
-  document.getElementById("aside-dropdown-content").classList.toggle("aside-show");
-}
-
-window.onclick = function(e) {
-  if (!e.target.matches('.aside-dropbtn')) {
-    var as_dd = document.getElementById("aside-dropdown-content");
-    if (as_dd.classList.contains('aside-show')) {
-      as_dd.classList.remove('asid-show');
-    }
+window.onload = function(){
+  var box = document.getElementById("boxRegister");
+  var s = document.getElementsByClassName("closeX")[0];
+  var showbox = document.getElementsByClassName("themhocvien")[0];
+  s.onclick = function(){
+    box.style.display = "none";
+  }
+  showbox.onclick = function(){
+    box.style.display = 'block';
   }
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Đăng ký</title>
+	<title>Đăng ký nhiều học viên</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="./img/favicon.ico" type="image/x-icon" rel="shortcut icon">
@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<link rel="stylesheet" type="text/css" href="./css/dang-ky.css">
+    <link rel="stylesheet" type="text/css" href="./css/dang-ky-nhieuhocvien.css">
 	<script type="text/javascript" src="./js/custom.js"></script>
 </head>
 <body>
@@ -126,16 +127,16 @@
 				</aside>
 				<section>
 					<div class="page-title">
-						<a href="#" class="active">Đăng ký cho một học viên</a>
-						<a href="#">Đăng ký cho nhiều học viên</a>
+						<a href="#">Đăng ký cho một học viên</a>
+						<a href="#" class="active">Đăng ký cho nhiều học viên</a>
 					</div>
 					<form action="" id="RegisterForm" method="post">
 	                    <div class="small">(*) Thông tin bắt buộc</div><br>             
-                        <legend>THÔNG TIN HỌC VIÊN</legend>       
+                        <legend>THÔNG TIN NGƯỜI LIÊN HỆ</legend>       
                         <div class="control-group">
-                            <label class="control-label" for="CompanyName">Họ tên học viên (*)</label>
+                            <label class="control-label" for="CompanyName">Họ tên người liên hệ (*)</label>
                             <div class="controls">
-                                <input type="text" name="Name" id="Name" placeholder="Họ tên người học" value="">
+                                <input type="text" name="Name" id="Name" placeholder="Họ tên người liên hệ" value="">
                             </div>
                         </div>
                         <div class="control-group">
@@ -176,34 +177,49 @@
                             </div>
                         </div>
                         
-                        <div class="control-group">
-                            <label class="control-label" for="CouseName">
-                                Khóa học đăng ký (*)</label>
-                            <div class="controls">
-                                <div>
-                                    <select name="choiceCourse" id="choiceCourse" style="width: 93%">
-                                        <option value="">Bấm vào đây để chọn khóa học</option>
-                                        
-                                        <option value="0" disabled="disabled">BỘ CHƯƠNG TRÌNH ĐẶC BIỆT “ĐÀO TẠO GIÁM ĐỐC”</option>
+                        <legend>THÔNG TIN ĐĂNG KÝ (*)</legend>
 
+                        <table class="thongtinhocvien">
+                            <thead>
+                               <tr>
+                                    <th>STT</th>
+                                    <th>Họ tên</th>
+                                    <th>Giới tính</th>
+                                    <th>Chức danh</th>
+                                    <th>Email</th>
+                                    <th>Điện thoại</th>
+                                    <th>Chương trình</th>
+                                    <th>Ngày khai giảng</th>
+                                    <th></th>
+                               </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>das</td>
+                                    <td>Nam</td>
+                                    <td>Director</td>               
+                                    <td>abc@gmail.com</td>
+                                    <td>0123456789</td>
+                                    <td>CEO - GIÁM ĐỐC ĐIỀU HÀNH</td>
+                                    <td>23/06/2018</td>
+                                    <td><a href="#">Xoá</a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>das</td>
+                                    <td>Nam</td>
+                                    <td>Director</td>               
+                                    <td>abc@gmail.com</td>
+                                    <td>0123456789</td>
+                                    <td>CEO - GIÁM ĐỐC ĐIỀU HÀNH</td>
+                                    <td>23/06/2018</td>
+                                    <td><a href="#">Xoá</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
 
-                                        <option value="0" disabled="disabled">BỘ CHƯƠNG TRÌNH ĐÀO TẠO “QUẢN LÝ - LÃNH ĐẠO”</option>
-                                        
-                                        <option id="1985" title="NĂNG LỰC QUẢN TRỊ cho QUẢN LÝ CẤP TRUNG (MMM)" value="1985" selected="selected">NĂNG LỰC QUẢN TRỊ cho QUẢN LÝ CẤP TRUNG (MMM) - Hà Nội</option>
-
-
-                                        <option value="0" disabled="disabled">BỘ CHƯƠNG TRÌNH ĐÀO TẠO “NHÂN SỰ - NHÂN LỰC”</option>
-
-                                        <option value="0" disabled="disabled">BỘ CHƯƠNG TRÌNH ĐÀO TẠO “TÀI CHÍNH - KẾ TOÁN”</option>
-
-                                        <option value="0" disabled="disabled">BỘ CHƯƠNG TRÌNH ĐÀO TẠO “TIẾP THỊ - BÁN HÀNG”</option>
-
-
-                                        <option value="0" disabled="disabled">BỘ CHƯƠNG TRÌNH ĐÀO TẠO “KỸ NĂNG CHUYÊN NGHIỆP” (PROFESSIONAL SKILLS)</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
+                        <div class="themhocvien"><a>+ Thêm Học viên & Chương trình</a></div>
 
                         <div class="chuy"><i>Trong trường hợp đăng ký online bị trục trặc, Quý vị vui lòng email về daotao@PACE.edu.vn hoặc điện thoại tới (024) 3646.2828 (gặp BP. Tư Vấn Đào Tạo của Nhà Trường) để được hỗ trợ</i></div>
 
@@ -361,6 +377,94 @@
 		</div>
 	</div>
 </div>
+<div id="boxRegister">
+    <form id="RegisterFormMore">
+        <div class="box-header">
+            <span class="title">NHẬP THÔNG TIN HỌC VIÊN & CHỌN CHƯƠNG TRÌNH THAM DỰ</span>
+            <span class="closeX">&times;</span>
+        </div>
+            
+        <div class="control-group">
+            <label class="control-label" for="CompanyName">Họ tên học viên (*)</label>
+            <div class="controls">
+                <input type="text" name="Name" id="Name" placeholder="Họ tên người học" value="">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="Gender">
+                Giới tính (*)</label>
+            <div class="controls">
+                <label>
+                    <input type="radio" name="Gender" id="rdNam" value="M">
+                    Nam
+                </label>
+                <label>
+                    <input type="radio" name="Gender" id="rdNu" value="F">
+                    Nữ
+                </label>
+                <label for="Gender" generated="true" class="error" style="display: none;">
+                    Vui lòng chọn giới tính</label>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="Fullname">
+                Di động (*)</label>
+            <div class="controls">
+                <input type="text" id="DiDongNLH" name="PhoneNumber" placeholder="Điện thoại liên lạc" value="">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="Fullname">
+                Email (*)</label>
+            <div class="controls">
+                <input type="text" id="EmailNLH" name="Email" placeholder="Email liên lạc" value="">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="Address">
+                Địa điểm học (*)</label>
+            <div class="controls">
+                <input type="text" id="Address" name="Address" placeholder="Địa điểm học" value="">
+            </div>
+        </div>
+        
+        <div class="control-group">
+            <label class="control-label" for="CouseName">
+                Khóa học đăng ký (*)</label>
+            <div class="controls">
+                <div>
+                    <select name="choiceCourse" id="choiceCourse" style="width: 93%">
+                        <option value="0">Bấm vào đây để chọn khóa học</option>
+                        
+                        <option value="1">BỘ CHƯƠNG TRÌNH ĐẶC BIỆT “ĐÀO TẠO GIÁM ĐỐC”</option>
 
+
+                        <option value="2">BỘ CHƯƠNG TRÌNH ĐÀO TẠO “QUẢN LÝ - LÃNH ĐẠO”</option>
+                        
+                        <option value="3">NĂNG LỰC QUẢN TRỊ cho QUẢN LÝ CẤP TRUNG (MMM) - Hà Nội</option>
+
+
+                        <option value="4">BỘ CHƯƠNG TRÌNH ĐÀO TẠO “NHÂN SỰ - NHÂN LỰC”</option>
+
+                        <option value="5">BỘ CHƯƠNG TRÌNH ĐÀO TẠO “TÀI CHÍNH - KẾ TOÁN”</option>
+
+                        <option value="6">BỘ CHƯƠNG TRÌNH ĐÀO TẠO “TIẾP THỊ - BÁN HÀNG”</option>
+
+                        <option value="7">BỘ CHƯƠNG TRÌNH ĐÀO TẠO “KỸ NĂNG CHUYÊN NGHIỆP” (PROFESSIONAL SKILLS)</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <div></div>
+            <div>
+                <input type="submit" class="btn-submit" id="submit" name="Lưu" value="Lưu">
+
+                <input type="reset" class="btn-reset" name="reset" value="Huỷ">
+            </div>
+        </div>
+    </form>
+</div>
 </body>
 </html>

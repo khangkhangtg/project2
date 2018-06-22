@@ -20,8 +20,8 @@
 	margin: 0 auto;
 }
 .hoatdongdaotao .item-img:hover,.hoatdongdaotao .item-img.active, .hoatdongdaotao a.active{
-	background-color: #0078c3;
-	color: #0078c3;
+	background-color: rgba(54, 95, 145, 1);
+	color: rgba(54, 95, 145, 1);
 	font-weight: bold;
 
 }
@@ -32,18 +32,18 @@
 .program .title-program{
 	font-size: 1.25em;
 	text-transform: uppercase;
-	border-left: 3px solid #0078c3;
+	border-left: 3px solid rgba(54, 95, 145, 1);
 	box-shadow: -3px 4px 5px #f0f0f0;
 	margin-bottom: 10px;
 	margin-top: 30px;
 	padding: 5px 10px;
-	color: #0078c3;
+	color: rgba(54, 95, 145, 1);
 	font-weight: bold;
 }
 .program table{border-collapse: collapse;}
 .program tr:nth-child(even){background-color: #f1f1f1;}
 .program td{
-	font-size: 1.2em;
+	font-size: 1.05em;
 	text-transform: uppercase;
 	padding: 8px;
 	line-height: 30px;
@@ -61,12 +61,12 @@
 .chuongtrinhtoancau .title{
 	font-size: 1.25em;
 	text-transform: uppercase;
-	border-left: 3px solid #0078c3;
+	border-left: 3px solid rgba(54, 95, 145, 1);
 	box-shadow: -3px 4px 5px #ccc;
 	margin-bottom: 20px;
 	margin-top: 20px;
 	padding: 5px 10px;
-	color: #0078c3;
+	color: rgba(54, 95, 145, 1);
 	font-weight: bold;
 }
 .chuongtrinhtoancau .list-item{

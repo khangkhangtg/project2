@@ -83,7 +83,7 @@ li{
 .chinh:hover, .chinh:hover > a, li.chinh.active, li.chinh.active > a,
 .submenu a:hover{
 	color: #fff;
-	background-color: #0078c3;
+	background-color: rgba(54, 95, 145, 1);
 	border-left: none;
 }
 .submenu{
@@ -119,13 +119,16 @@ li{
 .footer a:hover{color: yellow!important;}
 .footer .container{
 	display: grid;
-	grid-template-columns: 357px 165px 225px 195px;
+	grid-template-columns: 45% 30% 25%;
 	padding: 10px 0 25px 0;
 }
 .footer .container .item h4{
 	margin: 15px 20px 15px 0;
 	padding: 7px 0;
 	border-bottom: 1px solid #fff;
+}
+.footer .container .item > div{
+	padding-right: 25px;
 }
 .footer-bottom{color: #fff;background-color: #004F8B; padding-bottom: 10px; margin: 0;}
 .footer-bottom a{color: #fff;}
@@ -149,20 +152,13 @@ li{
 
 @media all and (max-width: 1100px) {
 
-.wrapperhome, .footer-bottom, .wrapper-header, .footer{width: 100%;}
+.wrapperhome, .footer-bottom, .wrapper-header, .footer, .container{width: 100%;}
 
 .container{width: 95%; margin: 0 auto;}
 
 h1, h2, h3, .menu a{ font-size: 1.16em;}
 h4, p, a{
 	font-size: 1.12em;
-}
-
-
-.footer .container{
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	/* grid-template-rows: 1fr 1fr; */
 }
 
 .footer-bottom .container{
@@ -195,7 +191,7 @@ h4, p, a{
     outline: none;
     color: white;
     padding: 14px 16px;
-    background-color: #0078c3;
+    background-color: rgba(54, 95, 145, 1);
     font-family: inherit;
     margin-top: 20px;
     width: 100%;
@@ -219,7 +215,7 @@ h4, p, a{
 }
 .dropdown-content a.active{
 	color: #fff;
-	background-color: #0078c3;
+	background-color: rgba(54, 95, 145, 1);
 }
 
 .show {
