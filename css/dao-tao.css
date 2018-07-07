@@ -29,6 +29,9 @@
 	margin-top: 20px;
 	width: 60px;
 }
+.program{
+	width: 100%;
+}
 .program .title-program{
 	font-size: 1.25em;
 	text-transform: uppercase;
@@ -40,7 +43,7 @@
 	color: rgba(54, 95, 145, 1);
 	font-weight: bold;
 }
-.program table{border-collapse: collapse;}
+.program table{border-collapse: collapse; width: 100%;}
 .program tr:nth-child(even){background-color: #f1f1f1;}
 .program td{
 	font-size: 1.05em;
@@ -95,6 +98,12 @@
 }
 .chuongtrinhtoancau .list-item .item a:hover img{
 	opacity: 0.8;
+}
+@media all and (max-width: 1000px) {
+	.chuongtrinhtoancau .list-item .item img{
+		height: 95%;
+		width: 100%;
+	}
 }
 @media all and (max-width: 640px) {
 	.title-program{
